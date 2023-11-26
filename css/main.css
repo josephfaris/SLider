@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@200&family=Shadows+Into+Light&family=Wallpoet&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f2f2;
+}
+
+section .card .image {
+    height: 140px;
+    width: 140px;
+}
+section .card .image img {
+    height: 100%;
+    border-radius:50%;
+    width: 100%;
+    object-fit: cover;
+    padding: 3px;
+    border: 3px solid #fff;
+}
+.card {
+    border-radius: 20px;
+    background-color: #fff;
+    position: relative;
+    margin: 20px 0;
+    width: 280px;
+}
+.card .card-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+.card::before {
+    content: "";
+    position: absolute;
+    height: 55%;
+    width: 100%;
+    background-color: #7d2ae8;
+    border-radius: 20px 20px 0 0; 
+}
+
+.card .media-icons{
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card .media-icons i {
+    color: #fff;
+    opacity: 0.6;
+    margin-top:10px ;
+    transition: all 0.3 ease;
+    cursor: pointer;
+}
+.card .media-icons i:hover {
+    opacity: 1;
+}
+
+.card .name-prof {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    color: #333;
+}
+.name-prof .name {
+    font-size: 20px;
+    font-weight: 600;
+    
+}
+.name-prof .profes {
+    font-size: 15px;
+    font-weight: 500;
+
+}
+.card .ragting {
+font-size: 18px;
+margin: 0 2px;
+color:#7d2ae8 ;
+}
+.swiper {
+    width: 950px;
+}
